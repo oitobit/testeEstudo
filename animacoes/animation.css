@@ -1,0 +1,50 @@
+/* Regras da minha animação */
+@keyframes exemplo1 {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 60%;
+        background-color: rgb(245, 181, 234);
+        color: white;
+    }
+
+    100% {
+        background-color: chartreuse;
+        left: 40%;
+    }
+}
+
+/* 
+* Estilizando elemento div
+* Propriedades animation adicionadas
+*/
+div {
+    animation-name: exemplo1; /* Nome da animação */
+    animation-duration: 3s; /* Tempo de duração da animação */
+    animation-timing-function: cubic-bezier(.6,-0.28,.74,.05); /* Especifica a velocidade da curva */
+    animation-iteration-count: 2; /* Quantidade de vezes que a animação será executada */
+    animation-delay: 4s; /* Especifica a demora para executar a animação */
+    border-radius: 3px;
+    border: 3px solid lightgrey;
+    box-sizing: border-box;
+    padding: 12px;
+    position: relative;
+    margin: 20px;
+    width: 300px;
+}
+
+/* Cor da minha div1 */
+#div1 {
+    background-color: lightblue;
+}
+
+/* Cor da minha div2 */
+#div2 {
+    background-color: lightgreen;
+}
+/* Cor da minha div3 */
+#div3 {
+    background-color: #f1f1f1;
+}
