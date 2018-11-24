@@ -12,4 +12,10 @@ function funcaoMulti () {
     var multiplicar = mult1 * mult2;
 
     document.getElementById("exibir").innerHTML = multiplicar;
+
+    switch (multiplicar) {
+        case 6:
+            document.getElementById("exibir").style.color = "red";
+            break;
+    }
 }
