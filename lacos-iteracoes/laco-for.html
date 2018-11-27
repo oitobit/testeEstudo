@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laços</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var carro = ['modelo','pneu','volante','roda'];
+        var text = "";
+        for (i = 0; i < carro.length; i++) {
+            text += i + " " + carro[i] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>
