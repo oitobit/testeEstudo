@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index Lenght</title>
+</head>
+<body>
+    <p id="demo">Rodrigo</p>
+
+    <p id="res"></p>
+    
+    <script>
+        var arr = [0, 12, 20, -12, -20];
+        arr.push(17);
+        var found = arr.find(function(elem){
+            return elem > 12;
+        });
+        document.getElementById("res").innerHTML = found;
+
+        var paragrafo = 'The quick brown fox jumped over the lazy dog. If the dog barked, was it really lazy?';
+        var regeX = /[^\w\s]/g;
+        console.log(paragrafo.search(regeX));
+
+        var str = ' Rodrigo estuda methodos javascript no momento';
+        var words = str.split(' ');
+        console.log(words[3]);
+    </script>
+</body>
+</html>
