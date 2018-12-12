@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+<body>
+    <p id="resultado"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+
+        /*inicilizando um array e acessando item dele*/
+        var frutas = ['maça', 'morango']; //inicializa o array
+
+        var primeiro = frutas[0]; //acessa o primiero item do array
+        //maça
+
+        var ultimo = frutas[1]; // acessa o segundo item do array
+        //morango
+        
+        /*Usando metodos para iteragir com array items*/
+        frutas.push('laranja', 'melancia'); // adiciona um novo item ao array ao final do array
+        frutas.pop(); // remove o ultimo item de um array
+        frutas.shift(); // remove o primeiro item de um array
+        frutas.unshift('maracuja'); // adiciona um novo item no inicio de um array
+        var pos = frutas.indexOf('morango');  //procura o indice de um item array
+
+        document.getElementById("resultado").innerHTML = frutas;
+
+
+        /*Remover itens de uma posição de índice*/
+        var vegetais = ['Repolho', 'Nabo', 'Rapanete', 'Cenoura'];
+        var pos = 1, n = 2;
+        var itemsRemovidos = vegetais.splice(pos, n);
+        
+        document.getElementById("demo").innerHTML = "items restantes: " + vegetais;
+        document.getElementById("demo2").innerHTML = "items removidos: " + itemsRemovidos; 
+
+        /*Copiar um Array*/
+        var copiar = frutas.slice(); //copiar todo o array
+        document.getElementById("demo3").innerHTML =  copiar;
+    </script>
+</body>
+</html>
