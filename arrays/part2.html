@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrays parte 2</title>
+    <style>
+        html, body {
+            margin: 10px auto;
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Criando um array</h2>
+    <p>O exemplo a seguir cria um array, msgArray, com length 0, então atribui valores para msgArray[0] e msgArray[99], trocando o length do array para 100.</p>
+    <p id="demo"></p>
+
+    <h2>Criando um array bi-dimensional</h2>
+    <p id="demo2"></p>
+
+    <script>
+        /* Criando um array */
+        var msgArray = new Array();
+        msgArray[0] = 'Hello';
+        msgArray[99] = 'World';
+
+        if (msgArray.length == '100') {
+            document.getElementById("demo").innerHTML = "O length é 100.";
+        }
+
+        /* Criando um array bi-dimensional */
+        var items = [
+            ['moto', 'carro'], //primeiro array
+            ['quarto', 'cozinha', 'sala']// segundo array
+        ];
+
+        console.log(items[0][1]); //acessa o primeiro array com segundo item contigo nele
+        console.log(items[1][2]); //acessa o segundo array com terceiro item contigo nele
+    </script>
+</body>
+</html>
