@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teste</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+</body>
+    <script>
+
+        /* objeto javascript */
+        var pessoa = {
+            cabeca: 'grande',
+            braco: 'longo',
+            olho: 'azul',
+            idade: 23,
+            perna: 'cumprida',
+            dados: function() {
+                return this.braco + ", " + this.perna;
+            }
+        };
+        document.getElementById("demo").innerHTML = pessoa.dados();
+
+        /* functions com objeto */
+        function minhaFuncao (objeto) {
+            objeto.marca = 'Ford';
+        }
+
+        var carro = {
+            marca: 'Fiat',
+            modelo: 'Uno',
+            ano: 2018
+        };
+
+        minhaFuncao(carro);
+        document.getElementById("demo2").innerHTML = carro.marca;
+
+    </script>
+</html>

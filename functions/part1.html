@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        function minhaFuncao (objeto) {
+            objeto.marca = 'Toyota';
+            objeto.ano = 1964;
+        }
+        
+        /*
+        * Declare a variável 'meucarro';
+        * crie e inicialize um novo Objeto;
+        * atribua referência para 'meucarro'
+        */
+        var meuCarro = {
+            marca: 'Honda',
+            modelo: 'Accord',
+            ano: 1998
+        };
+
+        /* Exibe 'Honda' */
+        console.log(meuCarro.marca);
+
+         /* Passe a referência do objeto para a função */
+         minhaFuncao(meuCarro);
+
+         /*
+        * Exibe 'Toyota' como valor para a propriedade 'marca'
+        * do objeto, mudado pela função.
+        */
+        console.log(meuCarro.marca);
+        console.log(meuCarro.ano);
+    </script>
+</body>
+</html>
