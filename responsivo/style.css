@@ -1,0 +1,58 @@
+html, body {
+    width: 80%;
+    margin: 20px auto;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+header div h1 {
+    text-align: center;
+}
+
+div#box {
+    width: 100%;
+    padding: 40px 0px;
+}
+
+aside {
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+    height: 200px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+}
+
+aside ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    background-color: blueviolet;
+    padding: 5px 0px;
+    border-radius: 3px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 20px;
+}
+
+footer span {
+    color: #fff;
+    font-size: .8em;
+    font-weight: bold;
+}
