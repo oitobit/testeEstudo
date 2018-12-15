@@ -1,0 +1,18 @@
+div.calc {
+    border: 1px solid lightblue;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 300px;
+    padding: 15px;
+}
+
+.dig {
+    width: 60px;
+    height: 35px;
+    margin: 5px 1px;
+}
+
+#btn {
+    width: 100%;
+}
