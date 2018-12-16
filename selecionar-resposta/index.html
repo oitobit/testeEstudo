@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selecionar respostas</title>
+    <style>
+        p, label {
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+
+        input {
+            margin: .4rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Questão 1</h2>
+    <p>Assiná-le a alternativa correta em relação ao sistema operacional GNU/Linux.</p>
+    <p>GNU/Linux é um sistema operacinal de quais dessas alternativas:</p>
+    
+    <div>
+        <input type="radio" id="windows" name="resposta" value="0" checked onclick="document.getElementById('res').innerHTML = 'Resposta errada';">
+        <label>a) Windows</label>
+    </div>
+
+    <div>
+        <input type="radio" id="unix" name="resposta" value="1" onclick="document.getElementById('res').innerHTML = 'Resposta correta';">
+        <label>b) Unix</label>
+    </div>
+
+    <div>
+        <input type="radio" id="freebsd" name="resposta" value="0" onclick="document.getElementById('res').innerHTML = 'Resposta errada';">
+        <label>c) FreeBSD</label>
+    </div>
+
+    <div>
+        <input type="radio" id="macos" name="resposta" value="0" onclick="document.getElementById('res').innerHTML = 'Resposta errada';">
+        <label>d) MacOS</label>
+    </div>
+
+    <p id="res"></p>
+   
+    <!-- Código JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
