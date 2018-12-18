@@ -1,0 +1,9 @@
+div.overlay {
+    width: 0;
+}
+
+div.overlay-content {
+    background-color: black;
+    position: relative;
+    left: 50%;
+}
