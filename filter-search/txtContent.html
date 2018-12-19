@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>txtContent</title>
+</head>
+<body>
+
+    <p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non placeat animi provident voluptate natus veritatis totam dolore similique assumenda autem.</p>
+
+    <p id="p2"></p>
+
+    <!-- Código JavaScript -->
+    <script>
+        // declared variables
+        var txt, copied;
+
+        /* proprieded textContent: get content of text */
+        txt = document.getElementById("p1").textContent;
+
+        /* copied text content of element */
+        copied = document.getElementById("p2").innerHTML = txt;
+
+    </script>
+</body>
+</html>
