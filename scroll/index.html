@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scroll</title>
+    <style>
+        div#container {
+            padding: 8px;
+            background-color: lightblue;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">Scroll</div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos praesentium asperiores. Similique, voluptatum? Asperiores distinctio illo excepturi sequi velit?</p>
+    <p>Rem, assumenda soluta? Dignissimos, voluptas eligendi dolorum culpa odit amet fugiat? Magnam tempore ea blanditiis unde explicabo consequuntur repudiandae repellendus.</p>
+    <p>Odit, ullam. Repellat odit beatae iusto maiores amet in animi aliquam corrupti! Aliquam ut dicta veniam! Illum incidunt adipisci minus!</p>
+    <p>Eveniet quibusdam possimus voluptatem vitae nobis cupiditate, quas fugit dicta facilis minus maiores, placeat suscipit omnis autem. Mollitia, eveniet deserunt?</p>
+    <p>Sint saepe aperiam in. Vitae, veritatis, doloribus distinctio aperiam omnis doloremque asperiores sapiente quidem ab veniam deleniti ipsa, aliquam dolorem.</p>
+    <p>Omnis ab ad itaque odio tempore praesentium magni, corrupti autem. Modi nobis rerum alias fuga voluptate dolore labore quas porro!</p>
+    <p>Iusto, dolor perspiciatis a molestiae reiciendis commodi, aut nemo corporis ab quia accusamus unde nostrum consequuntur. Earum minus tempora aliquid!</p>
+    <p>Quia, harum iusto quod earum necessitatibus laborum ullam. Unde laboriosam qui porro itaque excepturi eaque harum illo dolores inventore minima!</p>
+    <p>Sit fugit facere minima vero vitae placeat perferendis, quibusdam quae maxime reprehenderit, fugiat ab, nobis voluptates similique quo et quis!</p>
+    <p>Ipsum id enim officiis ducimus ex consequatur minus recusandae, neque sed velit libero laborum fuga incidunt assumenda reiciendis praesentium ad.</p>
+
+    <!-- Código JavaScript -->
+    <script>
+        var cont = document.getElementById("container");
+        cont.addEventListener("click", function () {
+            window.scrollTo({
+                top: 200,
+                left: 100,
+                ehavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
