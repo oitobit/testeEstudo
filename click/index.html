@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Click</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #btn {
+            margin: 0;
+            padding: 8px;
+            background-color: grey;
+            width: 100%;
+            border: none;
+            color: white;
+            height: 50px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #container {
+            background-color: grey;
+            padding: 8px;
+            display: none;
+        }
+
+        .active {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="btn">Clique-me!</button>
+    <div id="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, atque!</p>
+        <p>Laboriosam sequi dolores harum maxime debitis consequuntur dolore consequatur fugit.</p>
+        <p>Tempore voluptatem at quis doloremque est qui illo eaque tenetur.</p>
+    </div>
+
+    <!-- Código JavaScript -->
+    <script>
+    var btn = document.getElementById("btn");
+    var cont = document.getElementById("container");
+
+    btn.addEventListener("click", function () {
+        cont.classList.add("active");
+
+        if (cont.style.display === "none") {
+            cont.style.display = "block";
+        }
+        else {
+            cont.style.display = "none";
+        }
+    });
+
+    </script>
+</body>
+</html>
