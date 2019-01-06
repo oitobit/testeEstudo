@@ -1,0 +1,24 @@
+div#container {
+    width: 36px;
+    height: 36px;
+    background-color: lightcoral;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    display: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.fa-angle-up {
+    font-size: 26px;
+    color: white;
+    position: relative;
+    top: 3px;
+    right: -10px;
+}
+
+div#container:hover {
+    background-color: rgb(233, 89, 89);
+}
