@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+}
+
+header#header {
+   width: 100%;
+   padding: 20px; 
+   height: 140px;
+   box-sizing: border-box;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+div.logo {
+    line-height: 2;
+    width: 50%;
+}
+
+div.logo > a {
+    font-size: 2.9em;
+    color: #333;
+    text-decoration: none;
+    width: 50%;
+}
+
+div.info {
+    width: 50%;
+    line-height: 4.5;
+}
+
+div.info > p {
+    text-align: right;
+    font-size: 16px;
+}
+
+div.menu {
+    width: 100%;
+    margin-top: -16px;
+    border: none;
+}
+
+nav.navBar {
+    background-color: lightgreen;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+}
+
+li {
+    margin: 20px 40px;
+    cursor: pointer;
+}
+
+div.btn-controle {
+    background-color: lightgreen;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 3px;
+    bottom: 3px;
+    display: none;
+
+}
+
+div.btn-controle > .fas {
+    font-size: 32px;
+    float: right;
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+}
+
