@@ -1,5 +1,7 @@
+// function topcontrole
 window.onscroll = function() {
     controle();
+    myFunction();
 }
 
 function controle() {
@@ -13,4 +15,16 @@ function controle() {
 
 function topcontrole() {
     document.documentElement.scrollTop = 0;
+}
+
+// navbar sticky
+var sticky = document.getElementById("menu");
+var sticky = menu.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+    menu.classList.add("sticky")
+    } else {
+    menu.classList.remove("sticky");
+    }
 }

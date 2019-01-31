@@ -33,7 +33,7 @@ div.info > p {
     font-size: 16px;
 }
 
-div.menu {
+div#menu {
     width: 100%;
     margin-top: -16px;
     border: none;
@@ -53,6 +53,10 @@ ul {
 li {
     margin: 20px 40px;
     cursor: pointer;
+}
+
+li:hover {
+    color: #fff;
 }
 
 div.btn-controle {
@@ -75,3 +79,8 @@ div.btn-controle > .fas {
     cursor: pointer;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
