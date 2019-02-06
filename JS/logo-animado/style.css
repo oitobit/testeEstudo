@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+}
+
+nav.navigation {
+    background-color: gray;
+    height: 60px;
+    width: 100%;
+}
+
+nav.nav-mozila {
+    width: 600px;
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+li a {
+    text-decoration: none;
+    padding: 12px 16px;
+    margin: 0 8px;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.sticky a {
+    text-decoration: none;
+    padding: 6px 12px;
+    margin: 0 2px;
+    color: blue;
+}
