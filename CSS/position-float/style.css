@@ -1,0 +1,46 @@
+html, body {
+    width: 85%;
+    margin: 20px auto;
+}
+div.position {
+    width: 100%;
+    height: 300px;
+}
+
+div.relative > div {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    border: 3px solid #73AD21;
+    width: 300px;
+}
+
+div.fixed > div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 3px solid #73AD21;
+    width: 300px;
+}
+
+div.relative2 {
+    position: relative;
+    top: 40px;
+    left: 40px;
+    border: 3px solid #73AD21;
+    width: 300px;
+    padding: 60px;
+}
+
+div.absolute {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    border: 3px solid #73AD21;
+    width: 300px;
+}
+
+div.float {
+    width: 100%;
+    height: 300px;
+}
