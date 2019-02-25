@@ -1,0 +1,6 @@
+div.logo {
+    background-image: url('mozilla-wordmark-black.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
