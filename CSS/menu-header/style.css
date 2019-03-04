@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+}
+
+nav.navBar {
+    background-color: lightblue;
+    width: 100%;
+}
+
+ul.list-menu {
+    list-style-type: none;
+    display: inline-flex;
+    width: 600px;
+}
+
+li.list-item {
+   padding: 10px 12px;
+   margin: 10px;
+}
+
+a.link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+a.link::after {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    content: "&darr;";
+    text-indent: -99999px;
+    vertical-align: top;
+    margin-top: 8px;
+    margin-left: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #333;
+    filter: alpha(opacity=50);
+    -khtml-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+ul.sub-menu {
+    list-style-type: none;
+    position: relative;
+    top: 100px;
+}
