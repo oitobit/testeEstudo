@@ -13,9 +13,14 @@ ul.list-menu {
     width: 600px;
 }
 
+ul.list-menu:hover .sub-menu {
+    display: block;
+}
+
 li.list-item {
    padding: 10px 12px;
    margin: 10px;
+   display: relative;
 }
 
 a.link {
@@ -45,6 +50,24 @@ a.link::after {
 
 ul.sub-menu {
     list-style-type: none;
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    background-color: lightblue;
+    padding: 0;
+    display: none;
+}
+
+li.sub-item {
+    width: 100px;
+    padding: 12px 20px;
+}
+
+li.sub-item > a {
+    color: #333;
+    text-decoration: none;
+}
+
+li.sub-item > a:hover {
+    text-decoration: underline;
 }
