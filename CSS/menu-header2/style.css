@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+}
+
+ul.menu {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    display: inline-flex;
+}
+
+li {
+    background-color: lightgreen;
+    padding: 12px 16px;
+}
+
+a.link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul.menu:hover ul.sub-menu {
+    display: block;
+}
+
+ul.sub-menu {
+    list-style-type: none;
+    position: absolute;
+    top: 47px;
+    left: 40px;
+    background-color: lightblue;
+    padding: 0;
+    width: 100px;
+    display: none;
+}
+
+ul.sub-menu li.sub-item {
+    padding: 12px 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
