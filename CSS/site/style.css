@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+nav.navMenu {
+    width: 100%;
+    background-color: #90ee90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    height: 60px;
+}
+
+.navMenu > ul:nth-child(1) {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    padding: 12px 16px;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
