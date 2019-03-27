@@ -63,3 +63,13 @@ div.container-aside > a {
 div.container-aside > a:hover {
     color: #90ee90;
 }
+
+div.box-container {
+    width: 100%;
+}
+
+div.grade {
+    width: 200px;
+    height: 100px;
+    background-color: #90ee90;
+}
