@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcular idade, mostrar sexo</title>
+</head>
+<body>
+    <p>Faça um programa que receba 10 números, calcule e imprima a soma dos números pares e a soma dos números primos.</p>
+
+    <script>
+        var contar, par = 0, impar = 0, soPar;
+
+        for (var i = 0; i < 9; i++) {
+            contar = parseInt(prompt("Informe um número["+1+"]:"));
+
+            if (contar %2 == 0) {
+                par += contar;
+            }
+            else {
+                impar += contar;
+            }
+        }
+        alert("Soma dos números pares é: " + par);
+        alert("Soma dos numeros impares é: "+  impar)
+
+        soPar = par;
+        console.log(soPar);
+    </script>
+</body>
+</html>
